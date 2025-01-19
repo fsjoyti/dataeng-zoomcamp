@@ -169,3 +169,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+data_pgadmin
+.terraform
+.tfstate
+.tfstate.backup
+.venv
+.terraform.lock.hcl
+ny_taxi_postgres_data
