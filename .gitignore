@@ -179,3 +179,4 @@ data_pgadmin
 .terraform.lock.hcl
 ny_taxi_postgres_data
 postgres
+04_gcp_kv.yaml
