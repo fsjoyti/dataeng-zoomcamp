@@ -3,5 +3,8 @@ See myqueries.sql in week1 folder for sql queries I ran in pgadmin for homework 
 
 See data engineering bootcamp homework2.docx in week2 for screenshots of my results from kestra ui. 
 For question 3 I ran backfill for yellow data from 2020 Jan 1 to Jan 31 and then queried the row count (after truncating yellow trip data postgres table) . Same in question 4 but for green trip data.
-For question 5 I just ran backfill for march 2020 after truncating the yellow tripdata postgres table and then queried the row count.
+I repeated these steps for gcp scheduled workflow and got same results(without truncating the data).
+For question 5 I just ran backfill for march 2021 after truncating the yellow tripdata postgres table and then queried the row count.
+Then I repeated this with gcp backfill workflow.
 
+See homework3.docx in week3 folder for screenshots of my result and homework3.sql for queries I ran
