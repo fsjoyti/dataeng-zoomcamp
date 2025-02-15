@@ -7,4 +7,6 @@ I repeated these steps for gcp scheduled workflow and got same results(without t
 For question 5 I just ran backfill for march 2021 after truncating the yellow tripdata postgres table and then queried the row count.
 Then I repeated this with gcp backfill workflow.
 
-See homework3.docx in week3 folder for screenshots of my result and homework3.sql for queries I ran
+See homework3.docx in week3 folder for screenshots of my result and homework3.sql for queries I ran.
+
+See dlt_workshop folder to see the colab notebook and its outputs.
