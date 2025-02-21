@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_nyc_tripdata
+    database: "{{ env_var('DBT_BIGQUERY_PROJECT', 'vibrant-mantis-376307') }}"
+    schema:   "{{ env_var('DBT_BIGQUERY_SOURCE_DATASET', 'test_dataset') }}"
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
+      - name: external_fhv_tripdata
