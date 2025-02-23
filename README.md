@@ -10,3 +10,5 @@ Then I repeated this with gcp backfill workflow.
 See homework3.docx in week3 folder for screenshots of my result and homework3.sql for queries I ran.
 
 See dlt_workshop folder to see the colab notebook and its outputs.
+
+See homework4.docx  in week4 folder for screenshots of my result and taxi_rides_ny for dbt code. 

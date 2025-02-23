@@ -9,14 +9,14 @@ tasks:
     value: |
       {
         "type": "service_account",
-        "project_id": "...",
-      }
+        "project_id": "vibrant-mantis-376307"
+        }
 
   - id: gcp_project_id
     type: io.kestra.plugin.core.kv.Set
     key: GCP_PROJECT_ID
     kvType: STRING
-    value: kestra-sandbox # TODO replace with your project id
+    value: vibrant-mantis-376307 # TODO replace with your project id
 
   - id: gcp_location
     type: io.kestra.plugin.core.kv.Set

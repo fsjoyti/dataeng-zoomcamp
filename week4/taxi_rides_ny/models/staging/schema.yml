@@ -2,12 +2,13 @@ version: 2
 
 sources:
   - name: staging
-    database: "{{ env_var('DBT_DATABASE', 'vibrant-mantis-376307') }}"
-    schema: "{{ env_var('DBT_SCHEMA', 'test_dataset') }}"
+    database: "{{ env_var('DBT_BIGQUERY_PROJECT', 'vibrant-mantis-376307') }}"
+    schema:   "{{ env_var('DBT_BIGQUERY_SOURCE_DATASET', 'test_dataset') }}"
       # loaded_at_field: record_loaded_at
     tables:
       - name: green_tripdata
       - name: yellow_tripdata
+      - name: fhv_tripdata
          # freshness:
            # error_after: {count: 6, period: hour}
 
@@ -194,3 +195,23 @@ models:
             description: Total amount of all tolls paid in trip.
           - name: Total_amount 
             description: The total amount charged to passengers. Does not include cash tips.
+      
+    - name: fhv_tripdata
+      columns:
+        - name: dispatching_base_num
+          description: The TLC Base License Number of the base that dispatched the trip
+        - name: pickup_datetime
+          description: The date and time of the trip pick-up
+        - name: dropOff_datetime
+          description: The date and time of the trip drop-off
+        - name: PUlocationID
+          description: TLC Taxi Zone in which the trip began
+        - name: DOLocationID
+          description: TLC Taxi Zone in which the trip ended
+        - name: SR_Flag
+          description: Indicates if the trip was a part of a shared ride chain offered by a High Volume FHV company
+        - name: Affiliated_base_number
+          description:  a unique identifier code that indicates the dispatching company or base associated with a particular FHV
+
+
+
