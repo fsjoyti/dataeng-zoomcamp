@@ -169,8 +169,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-
-
+fhvhv
+yellow
+zones
+.metals
+.scala-build
 data_pgadmin
 .terraform
 .tfstate
