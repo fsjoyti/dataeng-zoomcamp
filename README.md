@@ -14,3 +14,5 @@ See dlt_workshop folder to see the colab notebook and its outputs.
 See homework4.docx  in week4 folder for screenshots of my result and taxi_rides_ny for dbt code. 
 
 See homework5.docx in week5 folder for screenshots of my result and homework5.ipynb for my code.
+
+See homework6.docx in week6 folder for screenshots of my result and week6\pyflink\src\producers\load_taxi_data.py for kafka producer code and week6\pyflink\src\job\session_job.py for pyflink code.
